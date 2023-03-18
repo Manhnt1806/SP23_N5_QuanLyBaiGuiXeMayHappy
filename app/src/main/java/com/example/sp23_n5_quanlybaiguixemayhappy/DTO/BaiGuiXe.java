@@ -1,22 +1,22 @@
 package com.example.sp23_n5_quanlybaiguixemayhappy.DTO;
 
 public class BaiGuiXe {
-    private int id;
+    private int idBaiGuiXe;
     private int soLuongGui;
     private int soLuongTrong;
 
-    public BaiGuiXe(int id, int soLuongGui, int soLuongTrong) {
-        this.id = id;
+    public BaiGuiXe(int idBaiGuiXe, int soLuongGui, int soLuongTrong) {
+        this.idBaiGuiXe = idBaiGuiXe;
         this.soLuongGui = soLuongGui;
         this.soLuongTrong = soLuongTrong;
     }
 
-    public int getId() {
-        return id;
+    public int getIdBaiGuiXe() {
+        return idBaiGuiXe;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdBaiGuiXe(int idBaiGuiXe) {
+        this.idBaiGuiXe = idBaiGuiXe;
     }
 
     public int getSoLuongGui() {

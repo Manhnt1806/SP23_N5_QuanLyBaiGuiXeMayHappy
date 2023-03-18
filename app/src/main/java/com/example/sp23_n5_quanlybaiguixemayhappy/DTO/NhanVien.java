@@ -1,44 +1,36 @@
 package com.example.sp23_n5_quanlybaiguixemayhappy.DTO;
 
 public class NhanVien {
-    private int id;
-    private String phanLoaiNV;
-    private String hoTenNV;
+    private int idNV;
+    private String chucVu;
     private int sdtNV;
-    private String user;
-    private String pass;
+    private String passNV;
+    private String tenNV;
+    private int statusNV;
 
-    public NhanVien(int id, String phanLoaiNV, String hoTenNV, int sdtNV, String user, String pass) {
-        this.id = id;
-        this.phanLoaiNV = phanLoaiNV;
-        this.hoTenNV = hoTenNV;
+    public NhanVien(int idNV, String chucVu, int sdtNV, String passNV, String tenNV, int statusNV) {
+        this.idNV = idNV;
+        this.chucVu = chucVu;
         this.sdtNV = sdtNV;
-        this.user = user;
-        this.pass = pass;
+        this.passNV = passNV;
+        this.tenNV = tenNV;
+        this.statusNV = statusNV;
     }
 
-    public int getId() {
-        return id;
+    public int getIdNV() {
+        return idNV;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdNV(int idNV) {
+        this.idNV = idNV;
     }
 
-    public String getPhanLoaiNV() {
-        return phanLoaiNV;
+    public String getChucVu() {
+        return chucVu;
     }
 
-    public void setPhanLoaiNV(String phanLoaiNV) {
-        this.phanLoaiNV = phanLoaiNV;
-    }
-
-    public String getHoTenNV() {
-        return hoTenNV;
-    }
-
-    public void setHoTenNV(String hoTenNV) {
-        this.hoTenNV = hoTenNV;
+    public void setChucVu(String chucVu) {
+        this.chucVu = chucVu;
     }
 
     public int getSdtNV() {
@@ -49,19 +41,27 @@ public class NhanVien {
         this.sdtNV = sdtNV;
     }
 
-    public String getUser() {
-        return user;
+    public String getPassNV() {
+        return passNV;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setPassNV(String passNV) {
+        this.passNV = passNV;
     }
 
-    public String getPass() {
-        return pass;
+    public String getTenNV() {
+        return tenNV;
     }
 
-    public void setPass(String pass) {
-        this.pass = pass;
+    public void setTenNV(String tenNV) {
+        this.tenNV = tenNV;
+    }
+
+    public int getStatusNV() {
+        return statusNV;
+    }
+
+    public void setStatusNV(int statusNV) {
+        this.statusNV = statusNV;
     }
 }

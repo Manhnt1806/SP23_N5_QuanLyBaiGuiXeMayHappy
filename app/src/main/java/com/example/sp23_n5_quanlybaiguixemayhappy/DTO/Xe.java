@@ -1,34 +1,24 @@
 package com.example.sp23_n5_quanlybaiguixemayhappy.DTO;
 
 public class Xe {
-    private int id;
-    private String tenXe;
+    private int idXe;
     private String bienSoXe;
     private String dangKyXe;
     private int statusXe;
 
-    public Xe(int id, String tenXe, String bienSoXe, String dangKyXe, int statusXe) {
-        this.id = id;
-        this.tenXe = tenXe;
+    public Xe(int idXe, String bienSoXe, String dangKyXe, int statusXe) {
+        this.idXe = idXe;
         this.bienSoXe = bienSoXe;
         this.dangKyXe = dangKyXe;
         this.statusXe = statusXe;
     }
 
-    public int getId() {
-        return id;
+    public int getIdXe() {
+        return idXe;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getTenXe() {
-        return tenXe;
-    }
-
-    public void setTenXe(String tenXe) {
-        this.tenXe = tenXe;
+    public void setIdXe(int idXe) {
+        this.idXe = idXe;
     }
 
     public String getBienSoXe() {

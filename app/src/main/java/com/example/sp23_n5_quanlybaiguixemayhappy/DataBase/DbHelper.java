@@ -17,7 +17,7 @@ public class DbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String sql = "CREATE TABLE tb_khachHang(idKH INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, cccdKH TEXT NOT NULL UNIQUE, sdtKH TEXT NOT NULL UNIQUE, passKH TEXT NOT NULL, tenKH TEXT NOT NULL, soDuKH INTEGER NOT NULL, goiSD INTEGER NOT NULL)";
         db.execSQL(sql);
-        // giới tính
+        // giới tính-địa chỉ
         sql = "INSERT INTO tb_khachHang VALUES(null, '034203008190', '0868983658','Manhnt1806', 'Nguyễn Thế Mạnh', '1000000', 1)";
         db.execSQL(sql);
         sql = "CREATE TABLE tb_nhanVien(idNV INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, chucVu TEXT NOT NULL, sdtNV TEXT NOT NULL UNIQUE, passNV TEXT NOT NULL, tenNV TEXT NOT NULL, statusNV INTEGER NOT NULL)";

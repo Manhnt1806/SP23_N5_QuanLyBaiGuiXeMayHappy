@@ -1,24 +1,24 @@
 package com.example.sp23_n5_quanlybaiguixemayhappy.DTO;
 
 public class NapTien {
-    private int id;
+    private int idNT;
     private String htttNT;
     private int soTien;
     private int statusNT;
 
-    public NapTien(int id, String htttNT, int soTien, int statusNT) {
-        this.id = id;
+    public NapTien(int idNT, String htttNT, int soTien, int statusNT) {
+        this.idNT = idNT;
         this.htttNT = htttNT;
         this.soTien = soTien;
         this.statusNT = statusNT;
     }
 
-    public int getId() {
-        return id;
+    public int getIdNT() {
+        return idNT;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdNT(int idNT) {
+        this.idNT = idNT;
     }
 
     public String getHtttNT() {
