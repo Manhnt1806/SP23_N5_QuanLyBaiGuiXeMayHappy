@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background=""
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_height="76dp"
+        android:layout_width="76dp"
+        android:layout_margin="10dp"
+        android:id="@+id/imhinhanhmoto"
+        android:src="@drawable/xe">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Honda wave"
+        android:textColor="#B00020"
+        android:textStyle="bold"
+        android:id="@+id/tvtenxecustomauto"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/imhinhanhmoto"
+        android:textSize="18dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="IDXe001"
+        android:id="@+id/tv_idxe"
+        android:textColor="#B00020"
+        android:layout_toRightOf="@id/imhinhanhmoto"
+        android:layout_alignBottom="@id/imhinhanhmoto"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="19/03/2023"
+        android:id="@+id/tv_ngayvao"
+        android:textColor="#B00020"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#B00020"
+        android:text="06:00"
+        android:id="@+id/tv_giovao"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/imhinhanhmoto"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#B00020"
+        android:text="17B9-55555"
+        android:id="@+id/tv_bienso"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imhinhanhmoto"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/darker_gray"
+        android:layout_height="1dp">
+
+    </View>
+
+</RelativeLayout>

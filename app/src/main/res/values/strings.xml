@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">SP23_N5_QuanLyBaiGuiXeMayHappy</string>
+    <string name="app_name">Quản lý bãi gửi xe Happy</string>
+    <string name="title_home">QR</string>
+    <string name="title_dashboard">Quản Lý Gửi</string>
+    <string name="title_messages">Thống Kê</string>
+    <string name="title_files">Tài Khoản</string>
 </resources>
