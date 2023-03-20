@@ -3,7 +3,7 @@ package com.example.sp23_n5_quanlybaiguixemayhappy.DTO;
 public class KhachHang {
     private int idKH;
     private int cccdKH;
-    private int sdtKH;
+    private String sdtKH;
     private String passKH;
     private String tenKH;
     private int soDuKH;
@@ -12,7 +12,10 @@ public class KhachHang {
 //    private String diaChi;
 
 
-    public KhachHang(int idKH, int cccdKH, int sdtKH, String passKH, String tenKH, int soDuKH, int goiSD) {
+    public KhachHang() {
+    }
+
+    public KhachHang(int idKH, int cccdKH, String sdtKH, String passKH, String tenKH, int soDuKH, int goiSD) {
         this.idKH = idKH;
         this.cccdKH = cccdKH;
         this.sdtKH = sdtKH;
@@ -38,11 +41,11 @@ public class KhachHang {
         this.cccdKH = cccdKH;
     }
 
-    public int getSdtKH() {
+    public String getSdtKH() {
         return sdtKH;
     }
 
-    public void setSdtKH(int sdtKH) {
+    public void setSdtKH(String sdtKH) {
         this.sdtKH = sdtKH;
     }
 

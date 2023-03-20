@@ -18,6 +18,9 @@
             android:name=".MainChinh"
             android:exported="false" />
         <activity
+            android:name=".MainDangKyTaiKhoan"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>
