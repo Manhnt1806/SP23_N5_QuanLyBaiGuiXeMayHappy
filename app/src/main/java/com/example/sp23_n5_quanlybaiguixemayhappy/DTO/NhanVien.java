@@ -3,12 +3,15 @@ package com.example.sp23_n5_quanlybaiguixemayhappy.DTO;
 public class NhanVien {
     private int idNV;
     private String chucVu;
-    private int sdtNV;
+    private String sdtNV;
     private String passNV;
     private String tenNV;
     private int statusNV;
 
-    public NhanVien(int idNV, String chucVu, int sdtNV, String passNV, String tenNV, int statusNV) {
+    public NhanVien() {
+    }
+
+    public NhanVien(int idNV, String chucVu, String sdtNV, String passNV, String tenNV, int statusNV) {
         this.idNV = idNV;
         this.chucVu = chucVu;
         this.sdtNV = sdtNV;
@@ -33,11 +36,11 @@ public class NhanVien {
         this.chucVu = chucVu;
     }
 
-    public int getSdtNV() {
+    public String getSdtNV() {
         return sdtNV;
     }
 
-    public void setSdtNV(int sdtNV) {
+    public void setSdtNV(String sdtNV) {
         this.sdtNV = sdtNV;
     }
 
