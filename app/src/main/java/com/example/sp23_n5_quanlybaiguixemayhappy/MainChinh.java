@@ -6,8 +6,10 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.example.sp23_n5_quanlybaiguixemayhappy.DoiMatKhau.TaiKhoanFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainChinh  extends AppCompatActivity {
@@ -18,6 +20,7 @@ public class MainChinh  extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            FragmentManager fragmentManager =getSupportFragmentManager();
             switch (item.getItemId()) {
                 case R.id.nav_QR:
                     DisplayPage("QR");
@@ -29,8 +32,10 @@ public class MainChinh  extends AppCompatActivity {
                     DisplayPage("Thống Kê");
                     return true;
                 case R.id.nav_Taikhoan:
-                    DisplayPage("Tài Khoản");
-                    return true;
+                    TaiKhoanFragment changeFragment = new TaiKhoanFragment();
+                    fragmentManager.beginTransaction()
+                            .replace(R.id.content_frame,changeFragment)
+                            .commit();
             }
             return false;
         }

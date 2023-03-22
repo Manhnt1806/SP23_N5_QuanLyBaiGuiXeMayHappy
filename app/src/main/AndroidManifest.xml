@@ -11,17 +11,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SP23_N5_QuanLyBaiGuiXeMayHappy"
         tools:targetApi="31">
-        <activity
-            android:name=".MainLogin"
-            android:exported="false" />
+
         <activity
             android:name=".MainChinh"
+            android:exported="false" />
+        <activity
+            android:name=".DoiMatKhau.TaiKhoanFragment"
             android:exported="false" />
         <activity
             android:name=".MainDangKyTaiKhoan"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".DangNhap.DangNhap"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
