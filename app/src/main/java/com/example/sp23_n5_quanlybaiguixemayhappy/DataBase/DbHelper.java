@@ -45,10 +45,18 @@ public class DbHelper extends SQLiteOpenHelper {
 
         sql = "CREATE TABLE hoaDon(idHD INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, idGuiXe INTEGER REFERENCES tb_guiXe(idGuiXe), htTT INTEGER NOT NULL)";
         db.execSQL(sql);
+
+        String sql1="CREATE TABLE Login (" +
+                "user TEXT PRIMARY KEY ," +
+                "pass TEXT NOT NULL)";
+        db.execSQL(sql1);
+        sql1="insert into Login(user,pass) values ('admin','admin')";
+        db.execSQL(sql1);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        String sqlLogin = "drop table if exists Login";
+        db.execSQL(sqlLogin);
     }
 }
