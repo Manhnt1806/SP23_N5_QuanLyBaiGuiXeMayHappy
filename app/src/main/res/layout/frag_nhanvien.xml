@@ -7,6 +7,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Thêm nhân viên"
+        android:textSize="40dp"
+        android:id="@+id/item_tvtile"
+        />
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:id="@+id/toolbartaikhoan"
@@ -20,6 +29,7 @@
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="wrap_content"
+            android:id="@+id/tv_idnv"
             android:text="ID NhanVien"
             android:textSize="20dp"
             android:textColor="#B00020"
@@ -42,34 +52,6 @@
         android:layout_height="1dp">
     </View>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="10dp"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:text="Phân loại Nhân Viên"
-            android:textSize="20dp"
-            android:textColor="#B00020"
-            android:layout_height="wrap_content" />
-        <EditText
-            android:layout_width="match_parent"
-            android:hint="phân loại nhân viên"
-            android:ems="10"
-            android:background="@android:color/transparent"
-            android:id="@+id/edt_phanloainv"
-            android:textColor="#B00020"
-            android:textColorHint="#AAAAAA"
-            android:layout_marginLeft="20dp"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:background="#AAAAAA"
-        android:layout_height="1dp">
-    </View>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -78,9 +60,10 @@
         android:layout_height="wrap_content">
         <TextView
             android:layout_width="wrap_content"
-            android:text="họ tên NV"
+            android:text="Họ tên NV"
             android:textSize="20dp"
             android:textColor="#B00020"
+            android:id="@+id/tv_tennv"
             android:layout_height="wrap_content" />
         <EditText
             android:layout_width="match_parent"
@@ -111,6 +94,7 @@
             android:text="SĐT"
             android:textSize="20dp"
             android:textColor="#B00020"
+            android:id="@+id/tv_sdtnv"
             android:layout_height="wrap_content" />
         <EditText
             android:layout_width="280dp"
@@ -124,37 +108,7 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:background="#AAAAAA"
-        android:layout_height="1dp">
-    </View>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="10dp"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:text="Tài khoản"
-            android:textSize="20dp"
-            android:textColor="#B00020"
-            android:layout_height="wrap_content" />
-
-        <EditText
-            android:id="@+id/user_nhanvien"
-            android:layout_width="217dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:background="@android:color/transparent"
-            android:enabled="false"
-            android:hint="User nhân viên"
-            android:textColor="#B00020"
-            android:textColorHint="#AAAAAA" />
-
-    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_marginTop="20dp"
@@ -166,6 +120,7 @@
             android:text="Password "
             android:textSize="20dp"
             android:textColor="#B00020"
+            android:id="@+id/tv_passnv"
             android:layout_height="wrap_content" />
 
         <EditText
@@ -180,6 +135,60 @@
             android:textColorHint="#AAAAAA" />
 
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:background="#AAAAAA"
+        android:layout_height="1dp">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Trạng thái làm việc"
+            android:textSize="20dp"
+            android:textColor="#B00020"
+            android:id="@+id/tv_statusnv"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt_status_nv"
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:hint="Trạng thái"
+            android:textColor="#B00020"
+            android:textColorHint="#AAAAAA" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Phân loại Nhân Viên"
+            android:textSize="20dp"
+            android:id="@+id/tv_chucvunv"
+            android:textColor="#B00020"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="phân loại nhân viên"
+            android:ems="10"
+            android:background="@android:color/transparent"
+            android:id="@+id/edt_phanloainv"
+            android:textColor="#B00020"
+            android:textColorHint="#AAAAAA"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 
     <Button
         android:layout_width="300dp"
@@ -187,6 +196,15 @@
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:id="@+id/btn_themnv"
+        android:textColor="#B00020"
+        android:background="#AAAAAA"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="300dp"
+        android:text="Hủy"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:id="@+id/btn_huynv"
         android:textColor="#B00020"
         android:background="#AAAAAA"
         android:layout_height="wrap_content" />
